@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.numans-regular {
+  font-family: "Numans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: "numans", sans-serif;
+    font-weight: 400;
+    color: rgb(86, 86, 86);
+}
+
+.main-header {
+    background-color: rgb(192, 192, 192);
+    padding: 5px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 25px;
+    padding: 20px;
+}
+
+.main-nav {
+    margin: 0, auto;
+}
+
+.nav-list {
+    text-align: right;
+    display: block;
+    list-style: decimal;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 2px;
+    padding: 20px;
+
+}
+
+.nav-list a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+.nav-list a:hover {
+    color: rgb(167, 255, 193);
+}
+
+.main-content {
+    margin: 150px 100px;
+}
+
+.section {
+    display: none;
+    margin: 40px 0px;
+}
+
+.section.active {
+    display: flex;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title {
+    font-size: 4rem;
+    padding: 20px;
+}
+
+.wave::before {
+    content: '👋';
+}
+
+.accent {
+    color:rgb(167, 255, 193);
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    color: rgb(97, 97, 97);
+    padding: 20px;
+}
+
+.hero-image {
+    width: 500px;
+    height: auto;
+}
+
+
+.projects-section {
+    padding: 20px;
+}
+
+.projects-section h2 {
+    font-size: 30px;
+    text-align: left;
+    padding:20px;
+}
+
+.contact-section {
+    padding: 20px;
+}
+
+.contact-section h3 {
+    font-size: 30px;
+    text-align: left;
+    padding:20px;
+}
+
+.about-section {
+    padding: 20px;
+}
+
+.about-section h4 {
+    font-size: 30px;
+    text-align: left;
+    padding:20px;
+}
+
+
+
+.main-footer {
+    background-color: rgb(192, 192, 192);
+    padding: 3px;
+    text-align: left;
+    font-style: italic;
+    color: white;
+    border-top: 10px solid #d9ffec;
+}
+
+.footer-content {
+    font-size: 15px;
+}
