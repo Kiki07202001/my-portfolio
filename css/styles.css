@@ -14,6 +14,7 @@ body {
     font-family: "numans", sans-serif;
     font-weight: 400;
     color: rgb(86, 86, 86);
+    background-color: #fefaff;
 }
 
 .main-header {
@@ -28,12 +29,12 @@ body {
 }
 
 .site-title {
-    font-size: 25px;
+    font-size: 2rem;
     padding: 20px;
 }
 
 .main-nav {
-    margin: 0, auto;
+    margin: 0 auto;
 }
 
 .nav-list {
@@ -115,6 +116,7 @@ body {
 
 .projects-section {
     padding: 20px;
+    margin: 0 auto
 }
 
 .projects-section h2 {
@@ -125,6 +127,7 @@ body {
 
 .contact-section {
     padding: 20px;
+    margin: 0 auto;
 }
 
 .contact-section h3 {
@@ -135,12 +138,14 @@ body {
 
 .about-section {
     padding: 20px;
+    margin: 0 auto;
 }
 
 .about-section h4 {
     font-size: 30px;
     text-align: left;
     padding:20px;
+    box-shadow:#d9ffec;
 }
 
 
@@ -148,12 +153,56 @@ body {
 .main-footer {
     background-color: rgb(192, 192, 192);
     padding: 3px;
+    margin: 0 auto;
     text-align: left;
     font-style: italic;
     color: white;
     border-top: 10px solid #d9ffec;
+    position: fixed;
 }
 
 .footer-content {
     font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-title {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .nav-list {
+        justify-content: space-between;
+        background-color: #91fda1;
+    }
+
+    .nav-list li {
+    display:inline-block;
+    margin-right: 2px;
+    padding: 0.75rem;
+
+    }
+
+    .nav-list a:hover {
+    color: rgb(68, 68, 68);
+}
+
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        align-items: center;
+    }
+
+    .hero-image {
+        width: 90%;
+        margin-top: 20px;
+    }
 }
