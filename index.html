@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Numans&display=swap" rel="stylesheet">
@@ -16,9 +17,9 @@
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li><a href="#home" data-section="home">Home</a></li>
-                    <li><a href="#projects" data-section="projects">Projects</a></li>
+                    <li><a href="projects.html" data-section="projects">Projects</a></li>
                     <li><a href="#contact" data-section="contact">Contact</a></li>
-                    <li><a href="#about" data-section="about">About</a></li>
+                    <li><a href="about.html" data-section="about">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,18 +28,47 @@
         <section id="home" class="section active hero-section">
             <div class="hero-content">
             <h2 class="hero-title">
-                    Hey, <span class="wave"></span> I'm <span class="accent">Kiera</span></h2>
+                    Hey, <span class="wave"></span> my name is <span class="accent">Kiera</span></h2>
             <p class="hero-subtitle">I am a full-time student at Humber Polytechnic focusing my studies on Javascript and Website Development and Design.</p>
             </div>
 
             <img class="hero-image" src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="place-holder-img">
 
-        </section>
+            <div class="featured-projects">
 
-        <section id="projects" class="projects-section section">
-            <div class="project-content">
-                 <h2>Code Cabinet</h2>
-                 <p>This is where future projects will go</p>
+                <div class="projects-container">
+
+                    <div class="project-row">
+                        <div class="project-card">
+                            <h3>Dynamic Blog Website</h3>
+                            <p>A blog site where users can create and delete posts.</p>
+                        </div>
+
+                        <img class="project-image" src="assets/Dynamic-Blog-Website.png" alt="Blog project">
+                    </div>
+
+
+                    <div class="project-row">
+                        <div class="project-card">
+                            <h3>Student Planner Website</h3>
+                            <p>A website that helps students organize assignments.</p>
+                        </div>
+
+                        <img class="project-image" src="assets/elementor-placeholder-image.png" alt="Planner project">
+                    </div>
+
+
+                    <div class="project-row">
+                        <div class="project-card">
+                            <h3>Portfolio Website</h3>
+                            <p>A personal portfolio built using HTML, CSS, and JavaScript.</p>
+                    </div>
+
+                    <img class="project-image" src="assets/elementor-placeholder-image.png" alt="Portfolio project">
+                    </div>
+
+                </div>
+
             </div>
         </section>
 
@@ -48,14 +78,6 @@
                <form action=""></form>
             </div>
         </section>
-
-         <section id="about" class="about-section section">
-            <div class="about-content">
-               <h4>Behind The Code</h4>
-               <p>About me section... Who is kiki?</p>
-            </div>
-        </section>
-
     </main>
     <footer class="main-footer">
         <div class="footer-content">
@@ -65,5 +87,7 @@
             </div>
         </div>
     </footer>
+
+
 </body>
 </html>

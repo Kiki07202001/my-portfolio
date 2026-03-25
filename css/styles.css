@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-color: rgb(20, 33, 64);
+    --secondary-color: rgb(20, 33, 64);
+    --soft-shadow: 0px 5px 25px rgb(36, 58, 109);
+    --border-radius: 10px;
+}
+
 .numans-regular {
   font-family: "Numans", sans-serif;
   font-weight: 400;
@@ -13,8 +20,8 @@
 body {
     font-family: "numans", sans-serif;
     font-weight: 400;
-    color: rgb(86, 86, 86);
-    background-color: #fefaff;
+    color: rgb(255, 255, 255);
+    background-color: #2e81df;
 }
 
 .main-header {
@@ -68,30 +75,39 @@ body {
 }
 
 .section {
-    display: none;
+    display: block;
     margin: 40px 0px;
 }
 
 .section.active {
-    display: flex;
+    display: block;
 }
+
 
 .hero-section {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    max-width: 400px;
+    height: auto;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .hero-title {
     font-size: 4rem;
     padding: 20px;
+    color: rgb(20, 33, 64);
 }
 
 .wave::before {
@@ -104,7 +120,7 @@ body {
 
 .hero-subtitle {
     font-size: 1rem;
-    color: rgb(97, 97, 97);
+    color: rgb(11, 22, 50);
     padding: 20px;
 }
 
@@ -113,16 +129,63 @@ body {
     height: auto;
 }
 
-
 .projects-section {
     padding: 20px;
-    margin: 0 auto
+    margin: 0 auto;
+}
+
+.project-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 90px;
+    min-height: 100vh;
+}
+
+.project-card {
+    position: relative;
+    width: 500px;
+    background-color: rgb(20, 33, 64, 0.8);
+    box-shadow: var(--soft-shadow);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project-row:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.project-row:nth-of-type(even) .project-card{
+    margin-left: -120px;
+}
+
+.project-row:nth-of-type(odd) .project-card{
+    margin-right: -120px;
+}
+
+.projects-container img {
+    width: 800px;
+    box-shadow: var(--soft-shadow);
+    border-radius: var(--border-radius);
+}
+
+.project-content h2 {
+    min-height: 100vh;
+}
+
+
+.project-card h3 {
+    font-size: 40px;
 }
 
 .projects-section h2 {
     font-size: 30px;
     text-align: left;
     padding:20px;
+}
+
+.project-details {
+    display: none;
 }
 
 .contact-section {
@@ -158,6 +221,7 @@ body {
     font-style: italic;
     color: white;
     border-top: 10px solid #d9ffec;
+
 }
 
 .footer-content {
