@@ -188,15 +188,31 @@ body {
     display: none;
 }
 
+.button-section {
+    display: flex;
+    justify-content: center;
+}
+.contact-button {
+    font-size: 4rem;
+    color: white;
+    padding: 15px 80px;
+    background-color: var(--main-color);
+    border-radius: 100px;
+}
+
 .contact-section {
-    padding: 20px;
+    padding: 100px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 400px;
 }
 
 .contact-section h3 {
-    font-size: 30px;
-    text-align: left;
-    padding:20px;
+    font-size: 4rem;
+    padding: 15px 80px;
+    background-color: var(--main-color);
+    border-radius: 100px;
 }
 
 .about-section {
@@ -227,6 +243,7 @@ body {
 .footer-content {
     font-size: 15px;
 }
+
 
 @media (max-width: 600px) {
     .header-content {
