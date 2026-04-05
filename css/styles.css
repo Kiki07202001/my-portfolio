@@ -6,7 +6,8 @@
 
 :root {
     --main-color: rgb(20, 33, 64);
-    --secondary-color: rgb(20, 33, 64);
+    --secondary-color: #2e81df;
+    --accent-color: rgb(167, 255, 193);
     --soft-shadow: 0px 5px 25px rgb(36, 58, 109);
     --border-radius: 10px;
 }
@@ -21,7 +22,7 @@ body {
     font-family: "numans", sans-serif;
     font-weight: 400;
     color: rgb(255, 255, 255);
-    background-color: #2e81df;
+    background-color: var(--secondary-color);
 }
 
 .main-header {
@@ -67,7 +68,7 @@ body {
 }
 
 .nav-list a:hover {
-    color: rgb(167, 255, 193);
+    color: var(--accent-color);
 }
 
 .main-content {
@@ -115,7 +116,7 @@ body {
 }
 
 .accent {
-    color:rgb(167, 255, 193);
+    color: var(--accent-color);
 }
 
 .hero-subtitle {
@@ -145,7 +146,7 @@ body {
 .project-card {
     position: relative;
     width: 500px;
-    background-color: rgb(20, 33, 64, 0.8);
+    background-color: var(--main-color);
     box-shadow: var(--soft-shadow);
     padding: 20px;
     border-radius: 10px;
@@ -195,12 +196,14 @@ body {
 
 .contact-button:hover {
     cursor: pointer;
+    color: var(--secondary-color)
 }
 
 .contact-button:active {
     transform: translate(5px, 5px);
     background-color: var(--main-color);
     box-shadow:15px 15px 25px rgb(36, 58, 109);
+    transform: scale(0.95);
 }
 
 .contact-button {
