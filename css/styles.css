@@ -188,15 +188,44 @@ body {
     display: none;
 }
 
+.button-section {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-button:hover {
+    cursor: pointer;
+}
+
+.contact-button:active {
+    transform: translate(5px, 5px);
+    background-color: var(--main-color);
+    box-shadow:15px 15px 25px rgb(36, 58, 109);
+}
+
+.contact-button {
+    transform: scale(0.95);
+    font-size: 4rem;
+    color: white;
+    padding: 15px 80px;
+    background-color: var(--main-color);
+    border-radius: 100px;
+    box-shadow:30px 30px 25px rgb(36, 58, 109);
+}
+
 .contact-section {
-    padding: 20px;
+    padding: 100px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 400px;
 }
 
 .contact-section h3 {
-    font-size: 30px;
-    text-align: left;
-    padding:20px;
+    font-size: 4rem;
+    padding: 15px 80px;
+    background-color: var(--main-color);
+    border-radius: 100px;
 }
 
 .about-section {
@@ -227,6 +256,7 @@ body {
 .footer-content {
     font-size: 15px;
 }
+
 
 @media (max-width: 600px) {
     .header-content {
